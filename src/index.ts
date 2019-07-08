@@ -54,3 +54,43 @@ const person = {
 
 person.setName("John Connor");
 console.log("firstname", person.firstName);
+
+// what is protorypal inheritance
+let car = function(model) {
+  this.model = model;
+};
+
+car.prototype.getModel = function() {
+  return this.model;
+};
+
+let toyota = new car("toyota");
+
+console.log("car model: ", toyota.getModel());
+
+// difference betweem function decoration and function expression
+// decoration is hoisted
+console.log(funcD());
+// console.log(funcE());
+function funcD() {
+  console.log("function decoration");
+}
+
+const funcE = function() {
+  console.log("function expression");
+};
+
+// what are prmoises and why do we use it
+
+// just nice way of writing callbacks
+
+// set timeout notes
+setTimeout(function() {
+  console.log("a");
+}, 0);
+
+console.log("b");
+console.log("c");
+
+// what is a clojure and how to use it:
+// when a function returns another function, the returning function will hold its enviroment
