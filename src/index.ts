@@ -18,3 +18,5 @@ if (true) {
 
 console.log(v);
 // console.log(l), l is not defined (let declarations live inside of the block scope)
+
+// diff between "===" and "=="
