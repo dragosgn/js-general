@@ -93,4 +93,5 @@ console.log("b");
 console.log("c");
 
 // what is a clojure and how to use it:
-// when a function returns another function, the returning function will hold its enviroment
+// when a function returns another function,
+// the returning function will hold its enviroment
